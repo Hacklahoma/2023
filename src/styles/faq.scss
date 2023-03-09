@@ -9,10 +9,12 @@
   flex-flow: column;
   overflow-x: hidden;
   padding: 2em;
+  background-color: pink;
 }
 .faq-main {
   width: $content-width;
   max-width: $content-max-width;
+  margin-left: 2rem;
 
   .column {
     margin-top: 20px;
@@ -29,6 +31,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    
 
     a {
       color: $black;
