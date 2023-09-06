@@ -1,44 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Hacklahoma 2023's Event Website!"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HACKLAHOMA</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <meta name="description" content="Hacklahoma 2024's Event Website!">
+        <link rel="icon" href="images/header.png" type="image/png">
+    </head>
+    <body>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Hacklahoma 2023</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+      <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/header.png" alt="Hacklahoma Logo">
+            </a>
+        </div>
+        <div class="header-title">
+            HACKLAHOMA
+        </div>
+        <nav class="navbar">
+            <div class="menu-items">
+                <a href="#about">About</a>
+                <a href="#guide">Guides</a>
+                <a href="#faq">FAQ</a>
+                <a href="#sponsors">Sponsors</a>
+                <a href="#">Live</a>
+            </div>
+            <a href="javascript:void(0)" class="menu-button">MENU</a>
+            <img class="mlh-badge" src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-gray.svg" alt="Major League Hacking 2024 Hackathon Season">
+          </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="clouds">
+                <div class="cloud-stripe">
+                  <img src="images/cloud.png" class="cloud" alt="cloud" />
+                  <img src="images/cloud.png" class="cloud" alt="cloud" />
+                  <img src="images/cloud.png" class="cloud" alt="cloud" />
+                  <img src="images/cloud.png" class="cloud" alt="cloud" />
+                  <img src="images/cloud.png" class="cloud" alt="cloud" />
+                  <img src="images/cloud.png" class="cloud" alt="cloud" />
+                  <img src="images/cloud.png" class="cloud" alt="cloud"/>
+                  <img src="images/cloud.png" class="cloud" alt="cloud"/>
+                  <img src="images/cloud.png" class="cloud" alt="cloud"/>
+                  <img src="images/cloud.png" class="cloud" alt="cloud"/>
+                  <img src="images/cloud.png" class="cloud" alt="cloud"/>
+                  <img src="images/cloud.png" class="cloud" alt="cloud"/>
+                  <img src="images/cloud.png" class="cloud" alt="cloud"/>
+                  <img src="images/cloud.png" class="cloud" alt="cloud"/>
+                  <img src="images/cloud.png" class="cloud" alt="cloud"/>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+                </div>
+            </div>
+              <div id="home-content" data-aos="fade-in">
+                <img id="home-image" class="logo" src="images/logo.png" alt="Hacklahoma Logo">
+            
+                <a href="https://events.mlh.io/events/9896-hacklahoma?intent=register" target="_blank" rel="noopener noreferrer" class="menu-button register-button">REGISTER HERE!</a>
+            
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:60px;z-index:10000" href="https://mlh.io/seasons/2023/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-black.svg" alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a>
-  </body>
+                <div class="event-details">
+                    February 10-11, 2024 | University of Oklahoma
+                </div>
+                <div class="countdown">
+                    <div class="countdown-text">
+                        <span id="days">00</span> Days
+                        <span id="hours">00</span> Hours
+                        <span id="minutes">00</span> Minutes
+                        <span id="seconds">00</span> Seconds
+                    </div>
+                    <div class="countdown-clock"></div>
+                </div>
+            </div>
+            <div class="cloud-transition">
+                <img src="images/cloud.png" class="cloud-big" alt="cloud"/>
+                <img src="images/cloud.png" class="cloud-big" alt="cloud"/>
+            </div>
+        </section>
+
+      
+          <section class="about" id="about">
+              <div id="about-content">
+                <p>Hacklahoma is Oklahoma’s Largest Hackathon.</p>
+                <p>Anyone who has an interest in technology attends a hackathon to learn, build and share their creations in a relaxed and collaborative atmosphere.</p>
+                <p>Even those with little to no experience are welcome to attend and learn!</p>
+            </div>
+          </section>
+          <section class="guide" id="guide">
+            <h2>New to Hackathons? Follow these guides to help you inspire your first hack! We'll be there for you if you're having trouble.</h2>
+
+            <div class="guide-container">
+              <div class="guide-item">
+                <h3>Build a Website</h3>
+                <p>Create a web application using the popular React framework.</p>
+                <a href ="https://github.com/Hacklahoma/guides/tree/react" target="_blank" rel="noopener noreferrer">
+                  <img src="images/yellow-book.svg" alt="Yellow book">
+                </a>
+                
+              </div>
+
+            
+              <div class="guide-item">
+                <h3>Explore Data Science</h3>
+                <p>Dive into basic applications of artificial intelligence and data science.</p>
+                <a href="https://github.com/Hacklahoma/guides/tree/data-science" target="_blank" rel="noopener noreferrer">
+                  <img src="images/black-book.svg" alt="Black book">
+              </a>
+              </div>
+
+              <div class="guide-item">
+                <h3>Build Bots</h3>
+                <p>Use Python to create bots for different platforms.</p>
+                <a href="https://github.com/Hacklahoma/guides/tree/bots" target="_blank" rel="noopener noreferrer">
+                <img src="images/red-book.svg" alt="Red book">
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class = "faq" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+              <button class="faq-button" data-modal-target="#hack">What's a hack?</button>
+              <button class="faq-button" data-modal-target="#cost">Does it cost anything?</button>
+              <button class="faq-button" data-modal-target="#travel">Any travel reimbursment?</button>
+              <button class="faq-button" data-modal-target="#food">Will there be food?</button>
+              <button class="faq-button" data-modal-target="#experience">Do I need experience?</button>
+              <button class="faq-button" data-modal-target="#teams">Are there teams?</button>
+              <button class="faq-button" data-modal-target="#bring">What should I bring?</button>
+              <button class="faq-button" data-modal-target="#code">What is the code 
+                of conduct?</button>
+              <button class="faq-button" data-modal-target="#attend">who can attend?</button>
+              <button class="faq-button" data-modal-target="#start">Can I start my 
+                project before</button>
+              <button class="faq-button" data-modal-target="#stay">Do I need to stay
+                the whole time?</button>
+              <button class="faq-button" data-modal-target="#nan">Can't find your
+                question?</button>
+            </div>
+
+            <div id="hack" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>A hack is something that is jury-rigged inelegantly but effectively, usually as a temporary solution to a problem. Like duct taping a hole in a sinking boat to keep it afloat.</p>
+              </div>
+            </div>
+
+            <div id="cost" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Admissions is completely free for all students!</p>
+              </div>
+            </div>
+
+            <div id="travel" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>At this time, we will not be providing travel reimbursements.</p>
+              </div>
+            </div>
+
+            <div id="food" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>We will supply food for Saturday’s lunch, dinner, and Sunday’s breakfast with plenty of snacks and drinks throughout. All free of charge!</p>
+              </div>
+            </div>
+
+            <div id="experience" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>No experience is needed. Whether you're a coder, an artist, or a writer, you'll get to work with various mentors, attend workshops, interact with companies, and learn alongside fellow participants.</p>
+              </div>
+            </div>
+
+            <div id="teams" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>We encourage everyone to work with a team! Teams may contain up to 4 people. We will also be offering a team-building session at the beginning of the hacking period.</p>
+              </div>
+            </div>
+
+            <div id="bring" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>You should bring a laptop, chargers, toiletries, a change of clothes, sleeping bag, pillow, and anything else you would need for an overnight weekend. Keep in mind that Hacklahoma will last for 24hrs.</p>
+              </div>
+            </div>
+
+            <div id="code" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Hacklahoma welcomes students from all backgrounds and values the importance of a safe and all-inclusive space. Anyone attending must adhere to the MLH Code of Conduct.</p>
+              </div>
+            </div>
+
+            <div id="attend" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Any student over the age of 18 can participate, regardless of major, background, or skill level.</p>
+              </div>
+            </div>
+
+            <div id="start" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>No, you cannot work or copy past projects. You can brainstorm ideas and collect whatever software and tools you need, as long as the project is completely new.</p>
+              </div>
+            </div>
+
+            <div id="stay" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>No, you’re not confined here. Feel free to go home and get some rest, but be back in time for judging!</p>
+              </div>
+            </div>
+
+            <div id="nan" class="modal" data-modal>
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>If your question wasn’t answered, please feel free to contact us via Instagram, Twitter, Facebook or send us an email to team@hacklahoma.org.</p>
+              </div>
+            </div>
+          </section>
+          <section id="sponsors">
+            <div class="stars-container">
+                <img src="images/stars.svg" alt="Stars">
+            </div>
+            <h2>Sponsors</h2>
+            <div class="sponsor-logos">
+                <a href="https://www.paycom.com/" class="sponsor-logo" target="_blank" rel="noopener noreferrer">
+                    <img src="images/sponsors_and_partners/paycom1.jpg" alt="Paycom">
+                </a>
+                <a href="https://interworks.com/" class="sponsor-logo" target="_blank" rel="noopener noreferrer">
+                  <img src="images/sponsors_and_partners/interworks-logo2.png" alt="Interworks">
+                </a>
+                <a href="https://www.kochind.com/" class="sponsor-logo" target="_blank" rel="noopener noreferrer">
+                  <img src="images/sponsors_and_partners/koch1.jpg" alt="Koch">
+                </a>
+                <a href="https://www.homecreations.com/" class="sponsor-logo" target="_blank" rel="noopener noreferrer">
+                  <img src="images/sponsors_and_partners/homecreations-logo.png" alt="Home Creations">
+                </a>
+
+                <a href="https://www.bakerhughes.com/" class="sponsor-logo" target="_blank" rel="noopener noreferrer">
+                  <img src="images/sponsors_and_partners/baker-hughes.png" alt="baker-hughes">
+                </a>
+
+                <a href="https://www.ou.edu/coe" class="sponsor-logo" target="_blank" rel="noopener noreferrer">
+                  <img src="images/sponsors_and_partners/gcoe.png" alt="GCOE">
+                </a>
+
+                <a href="https://www.northropgrumman.com/" class="sponsor-logo" target="_blank" rel="noopener noreferrer">
+                  <img src="images/sponsors_and_partners/NorthropGrumman.png" alt="NorthropGrumman">
+                </a>
+
+                <a href="https://www.boeing.com/" class="sponsor-logo" target="_blank" rel="noopener noreferrer">
+                  <img src="images/sponsors_and_partners/boeing.png" alt="boeing">
+                </a>
+                
+            </div>
+            <h2>Partners</h2>
+            <div class="partner-logos">
+                <a href="https://mlh.io/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/sponsors_and_partners/mlh.png" alt="MLH">
+                </a>
+                <a href="https://www.standoutstickers.com/?utm_campaign=events-league-organizers-fall2023&utm_medium=email&utm_source=customerio-zoho_creator_-_standout_sticker_intro" target="_blank" rel="noopener noreferrer">
+                  <img src="images/sponsors_and_partners/StandOutStickers_Logo.png" alt="StandOutStickers">
+                </a>
+            </div>
+        </section>   
+        <footer id="footer">
+          <div class="footer-container">
+              <div class="footer-column">
+                <img src="images/header.png" alt="Hacklahoma Logo" class="footer-logo">
+                <h3>HACKLAHOMA</h3>
+                <p>MADE WITH <img src="images/heart.svg" alt="Heart Icon" class="heart-icon"> IN NORMAN</p>
+              </div>
+      
+              <div class="footer-column">
+                  <h3>Social</h3>
+                  <a href="mailto:hacklahoma@ou.edu(Hacklahoma Team)" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="images/email.svg" alt="Email"></a>
+                  <a href="https://facebook.com/hacklahoma" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="images/facebook.svg" alt="Facebook"></a>
+                  <a href="https://twitter.com/hacklahoma" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="images/twitter.svg" alt="Twitter"></a>
+                  <a href="https://instagram.com/hacklahoma" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="images/instagram.svg" alt="Instagram"></a>
+              </div>
+      
+              <div class="footer-column">
+                  <h3>Other</h3>
+                  <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">Code of Conduct</a>
+                  <a href="#home" ><img class="top-icon" src="images/top.svg" alt="Top Icon"></a>
+                  <p>Top of Page</p>
+              </div>
+          </div>
+          <div class="grass">
+              <img src="images/grass.svg" alt="Grass Image">
+          </div>
+      </footer>     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src ="js/script.js"></script>
+        <script src ="js/scrollAbout.js"></script>
+        <script src ="js/modal.js"></script>
+        <script src ="js/menu.js"></script>
+
+
+
+    </body>
 </html>

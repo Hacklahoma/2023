@@ -1,0 +1,9 @@
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+  Content-Security-Policy = "default-src 'self'; img-src 'self' https://s3.amazonaws.com; script-src 'self' https://ajax.googleapis.com;"
+  X-Frame-Options = "SAMEORIGIN"
+  X-Content-Type-Options = "nosniff"
+  Referrer-Policy = "strict-origin-when-cross-origin"
+  Permissions-Policy = "geolocation=(self), microphone=()"
